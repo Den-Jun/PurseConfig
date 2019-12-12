@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_empty
+      table-underline: true
+      db-type: mysql
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: secret #JWT加解密使用的密钥
+  expiration: 1800 #JWT的超期限时间(60*30)
+  tokenHead: Bearer  #JWT负载中拿到开头
+
+
