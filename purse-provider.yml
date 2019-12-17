@@ -1,7 +1,3 @@
-server:
-  port: 8081
-
-
 jwt:
   tokenHeader: Authorization #JWT存储的请求头
   secret: secret #JWT加解密使用的密钥
